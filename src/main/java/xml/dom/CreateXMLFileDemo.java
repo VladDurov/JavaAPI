@@ -1,4 +1,4 @@
-package xml;
+package xml.dom;
 
 import org.w3c.dom.Attr;
 import org.w3c.dom.Document;
@@ -47,7 +47,7 @@ public class CreateXMLFileDemo {
             TransformerFactory tf = TransformerFactory.newInstance();
             Transformer transformer = tf.newTransformer();
             DOMSource source = new DOMSource(doc);
-            StreamResult streamResult = new StreamResult(new File("/home/joker/IdeaProjects/JavaAPI/src/main/java/xml/cars.xml"));
+            StreamResult streamResult = new StreamResult(new File("/home/joker/IdeaProjects/JavaAPI/src/main/java/xml/dom/cars.xml"));
             transformer.transform(source,streamResult);
 
             StreamResult streamResultOut = new StreamResult(System.out);

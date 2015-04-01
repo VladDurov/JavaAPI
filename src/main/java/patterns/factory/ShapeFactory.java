@@ -1,7 +1,16 @@
 package patterns.factory;
 
-public class ShapeFactory {
+import patterns.abstract_factory.AbstractFactory;
+import patterns.abstract_factory.Color;
 
+public class ShapeFactory extends AbstractFactory {
+
+    @Override
+    public Color getColor(String color) {
+        return null;
+    }
+
+    @Override
     public Shape getShape(String typeShape){
 
         if(typeShape==null)return null;
