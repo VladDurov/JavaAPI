@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<family>
+    <person>
+        <name>Vlad</name>
+        <age>27</age>
+    </person>
+    <person>
+        <name>Vova</name>
+        <age>34</age>
+    </person>
+    <person>
+        <name>Tanya</name>
+        <age>57</age>
+    </person>
+    <person>
+        <name>Viktor</name>
+        <age>57</age>
+    </person>
+</family>
