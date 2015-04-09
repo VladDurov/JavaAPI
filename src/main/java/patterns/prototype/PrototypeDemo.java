@@ -12,6 +12,10 @@ public class PrototypeDemo {
             clonedShape.draw();
         }
 
+
+        //проверка
+
+
     }
 
 }
