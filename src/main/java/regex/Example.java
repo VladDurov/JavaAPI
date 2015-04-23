@@ -38,4 +38,20 @@ public class Example {
             System.out.println(s);
     }
 
+    public static void main(String[] args) {
+
+        Pattern pattern = Pattern.compile("Vlad", Pattern.CASE_INSENSITIVE);
+        Matcher matcher = pattern.matcher("Vladislav Viktorovich");
+
+        while (matcher.find()) {
+            System.out.println("start(): " + matcher.start());
+            System.out.println("end(): " + matcher.end());
+        }
+        System.out.println("lookingAt(): " + matcher.lookingAt());
+        System.out.println("matches(): " + matcher.matches());
+
+
+
+    }
+
 }

@@ -2,6 +2,8 @@ package io;
 
 import java.io.*;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class InputOutputToFile {
 
@@ -58,7 +60,25 @@ public class InputOutputToFile {
     }
 
     public static void main(String[] args) throws IOException {
-             InputOutputToFile.writeFile("D:\\env.txt");
+//             InputOutputToFile.writeFile("D:\\env.txt");
+
+        File dir = new File("/home/joker/JavaTest");
+        dir.mkdir();
+        FilenameFilter fnf = new FilenameFilter() {
+            @Override
+            public boolean accept(File file, String s) {
+                if(Pattern.compile("[^/s]+(?=.(txt|rtf))").matcher(s).find()){
+                    return true;
+                }
+                return false;
+            }
+        };
+
+        for(String s: dir.list(fnf))
+            System.out.println(s);
+
+
+
     }
 
 }
