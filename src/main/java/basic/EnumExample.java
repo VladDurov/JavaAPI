@@ -1,5 +1,8 @@
 package basic;
 
+import io.InputOutputToFile;
+
+
 public class EnumExample {
 
     enum Manufacturer {Motorolla, Sumsung, Nokia, Apple, HTC };
@@ -12,8 +15,9 @@ public class EnumExample {
             System.out.println(manufacturer);
         }
 
-
     }
+
+
 
 
 }
