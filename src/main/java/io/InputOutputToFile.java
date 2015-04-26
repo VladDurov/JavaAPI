@@ -64,6 +64,8 @@ public class InputOutputToFile {
 
         File dir = new File("/home/joker/JavaTest");
         dir.mkdir();
+        File file = new File(dir.getAbsolutePath()+"/test.txt");
+        file.createNewFile();
         FilenameFilter fnf = new FilenameFilter() {
             @Override
             public boolean accept(File file, String s) {
