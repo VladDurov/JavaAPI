@@ -3,40 +3,33 @@ package lang;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class Example {
 
-    private static StringBuffer sb = new StringBuffer("start");
-
-    public void stringBuffer() throws IOException {
-        sb.append(new BufferedReader(new InputStreamReader(System.in)).readLine());
-        System.out.println(sb.toString());
-    }
 
 
-    private static void metodwithstr(String str) {
-        for (String s : str.split("-")) System.out.println(s);
-        for (Character s : str.toCharArray()) System.out.println(s);
-        System.out.println();
-    }
+    public static void main(String[] args) {
 
-    public static void main(String[] args) throws IOException {
-        //Example.stringBuffer();
-        Example.metodwithstr("vlad-durov");
-        try {
-            Example.sum();
-        } catch (ArithmeticException e) {
-            e.printStackTrace();
+        List<Bicycle> bicycles = new ArrayList<Bicycle>();
+        bicycles.add(new Bike(30, 4));
+        bicycles.add(new SnowBike(60, 2));
+        bicycles.add(new Bike(40, 1));
+        bicycles.add(new SnowBike(20, 3));
+
+        Collections.sort(bicycles, Bicycle.BicycleComparator);
+
+        for (Bicycle bicycle :bicycles) {
+            System.out.println(bicycle);
         }
 
-    }
-
-    public static void sum() throws ArithmeticException {
-
-        System.out.println((5 / 0));
-        new Exception("" + (5 / 0));
 
     }
+
+
+
 
 
 }

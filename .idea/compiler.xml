@@ -25,6 +25,8 @@
         <module name="Java API" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Java API" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
-
