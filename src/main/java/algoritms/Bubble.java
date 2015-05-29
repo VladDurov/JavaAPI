@@ -22,12 +22,13 @@ public class Bubble {
         return arrs;
     }
 
-
     private void swap(int[] arrs, int inner) {
         if(arrs[inner-1] > arrs[inner]){
+            System.out.print(" " + arrs[inner] +"@" + arrs[inner-1]);
             int tmp = arrs[inner];
             arrs[inner] = arrs[inner-1];
             arrs[inner-1] = tmp;
+
         }
     }
 
