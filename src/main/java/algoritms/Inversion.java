@@ -21,7 +21,7 @@ public class Inversion {
 
         int center = inver.length/2;
         int ost = inver.length%2;
-        for (int i = center;  i > 0 ; i--) {
+        for (int i = center; i > 0; i--) {
             int tmp = inver[i-1];
             inver[i-1] = inver[center+ost];
             inver[center+ost] = tmp;

@@ -6,7 +6,6 @@ import org.junit.Test;
 
 public class InversionTest extends Assert {
 
-
     Inversion inversion;
 
     @Before
@@ -20,7 +19,6 @@ public class InversionTest extends Assert {
         int [] arrs = {7,4,3,8,1};
         int [] clone = arrs.clone();
         int [] inversArrs = {1,8,3,4,7};
-
 
         int [] ints = inversion.invetrs(arrs);
         for (int i : ints) {
@@ -45,7 +43,6 @@ public class InversionTest extends Assert {
         int [] arrs = {7,4,3,2,8,1};
         int [] clone = arrs.clone();
         int [] inversArrs = {1,8,2,3,4,7};
-
 
         int [] ints = inversion.invetrs(arrs);
         for (int i : ints) {
